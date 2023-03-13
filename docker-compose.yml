@@ -3,7 +3,7 @@ version: "3.2"
 services:
   nextjs:
     image: nextjs-course:latest
-    container_name: nextjs-course-172.28.0.60
+    container_name: nextjs-course-172.28.0.13
     volumes:
        - /tmp:/tmp
        - ./:/var/www/nextjs-course
@@ -11,7 +11,7 @@ services:
     command: npm run dev
     networks:
       default:
-        ipv4_address: 172.28.0.60
+        ipv4_address: 172.28.0.13
     tty: true
     stdin_open: true
     build:
